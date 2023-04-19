@@ -16,7 +16,7 @@ public class LambdaAndMethodReference {
 
         List<Integer> integersMR = new ArrayList<>(List.of(1, 2, 7, 4, 5));
         Consumer<List<Integer>> consumerMR = Collections::sort;
-        consumer.accept(integersMR);
+        consumerMR.accept(integersMR);
 
         System.out.println(integers);
     }
